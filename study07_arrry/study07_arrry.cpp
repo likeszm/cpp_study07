@@ -6,7 +6,7 @@
 *   但是可以加入一个长度参数，传这个参数时用sizeof计算
 * 2、无论是 *array 、 array[] 还是 array[5] 作为参数，实际效果都是一样的
 *   也就是说就函数而言，数组的长度是无关紧要的，因为 C++ 不会对形式参数执行边界检查。
-* 
+* 3、string是std下的一个类，包含<string>库文件后可以使用很多的方法去操作字符串
 */
 
 #include <iostream>
@@ -37,6 +37,7 @@ void string_test(void);
 
 int main()
 {
+
     int test_array[10] = { 0,1,2,3,4,5,6,7,8,9 };
 
     //dyadic_array_test();
@@ -251,3 +252,4 @@ void string_test(void)
 
 }
 #endif // STRING_TEST
+
